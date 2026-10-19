@@ -52,10 +52,11 @@ export default function Login() {
           <label>Password</label>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
 
-          <button type="submit" className="btn" style={{ width: "100%" }} disabled={loading}>
+          <button type="submit" className="btn" style={{ width: "100%",marginBottom:"10px" }} disabled={loading}>
             {loading ? "Logging in..." : "Login"}
           </button>
         </form>
+        <a href="https://ams-system-student-admission-form-r.vercel.app/" target="_blank" style={{textAlign:"center"}}>Create a Account</a>
       </div>
     </div>
   );
